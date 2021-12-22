@@ -1,4 +1,7 @@
 from django.shortcuts import render, HttpResponse
+from django.urls.conf import path
+from django import urls
+
 
 # Create your views here.
 
@@ -11,7 +14,15 @@ def index(request):
 	#return HttpResponse('This is Homepage')
 
 def about(request):
-	return HttpResponse('This is about page')
+	context = {
+		"variable1" : "Var1",
+		"title" : "About"
+	}
+	return render(request, 'about.html', context)
 
 def contact(request):
-	return HttpResponse("This is Contact Us Page")
+	context = {
+		"variable1" : "Var1",
+		"title" : "Contact"
+	}
+	return render(request, 'contact.html', context)
