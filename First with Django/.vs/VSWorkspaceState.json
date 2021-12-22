@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\home"
+    "\\home",
+    "\\Project1",
+    "\\Static",
+    "\\Templates"
   ],
+  "SelectedNode": "\\Templates\\index.html",
   "PreviewInSolutionExplorer": false
 }
